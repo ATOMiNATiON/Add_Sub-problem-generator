@@ -60,28 +60,26 @@ def main():
 
    while True:
 
- 	    num = input("Enter the # of digits (press enter to quit): ")
- 	    if num == "":
+ 	   num = input("Enter the # of digits (press enter to quit): ")
+ 	   if num == "":
  	    	break
 
- 	    digits = int(num)
- 	    numbers = int(input("Enter the # of numbers: "))
- 	    probs = prob_gen(numbers, digits)
- 	    print()
+ 	   digits = int(num)
+ 	   numbers = int(input("Enter the # of numbers: "))
+ 	   probs = prob_gen(numbers, digits)
+ 	   print()
 
- 	    h = form_dig(probs)
- 	    for i in range(len(h)):
- 	        print("{0:>5}".format(h[i]))
+ 	   h = form_dig(probs)
+ 	   for i in range(len(h)):
+ 	     	print("{0:>7}".format(h[i]))
 
 
- 	    answer = sum(probs)
- 	    user_ans = int(input("Answer: "))
- 	    if user_ans == answer:
- 	    	print("Correct!")
- 	    	print()
- 	    else:
- 	    	print(f"Your are incorrect, the answer is {answer}")
- 	    	print()
+ 	   answer = sum(probs)
+ 	   user_ans = int(input(" Answer: "))
+ 	   if user_ans == answer:
+ 	   	print("Correct!\n")
+ 	   else:
+ 	   	print(f"Your are incorrect, the answer is {answer}\n")
 # end main()
 
 # conditional statement--------------------------------------------------------
