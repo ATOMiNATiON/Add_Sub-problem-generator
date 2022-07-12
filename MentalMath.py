@@ -79,7 +79,7 @@ def main():
  	   if user_ans == answer:
  	   	print("Correct!\n")
  	   else:
- 	   	print(f"Your are incorrect, the answer is {answer}\n")
+ 	   	print(f"You are incorrect, the answer is {answer}\n")
 # end main()
 
 # conditional statement--------------------------------------------------------
